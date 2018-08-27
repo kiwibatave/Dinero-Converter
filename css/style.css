@@ -1,0 +1,65 @@
+/*----------------------------------------------------responsive------------------------------------------------------*/
+@media (max-width: 640px) {
+    main {
+        flex-direction: column;
+    }
+}
+/*---------------------------------------------------------body-------------------------------------------------------*/
+body {
+    display: flex;
+    min-height: 100vh;
+    max-width: 100vw;
+
+    flex-direction: column;
+    font-family: 'Bitter', serif;
+}
+
+/*--------------------------------------------------------header------------------------------------------------------*/
+#topnav {
+    height: 8vh;
+    background-color: #2e7d32;
+}
+
+a.brand-logo {
+    font-size: 20px;
+}
+
+/*---------------------------------------------------------main-------------------------------------------------------*/
+main {
+    flex: 1 0 auto;
+    background-color: #e0e0e0;
+    text-align: center;
+}
+
+#title {
+    text-align: center;
+    font-style: oblique;
+}
+
+#rules {
+    text-align: center;
+}
+
+#operation {
+    text-align: center;
+}
+
+#activity {
+    margin-top: auto;
+}
+
+li {
+    list-style: square;
+}
+
+#clic {
+
+    background-color: #2e7d32;
+    font-family: "Roboto", sans-serif;
+}
+
+/*--------------------------------------------------------footer------------------------------------------------------*/
+#footer {
+    height: 15vh;
+    background-color: #fff8e1;
+}

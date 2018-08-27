@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D. Convertor</title>
+    <script src="https://use.fontawesome.com/75764ff123.js"></script>
+    <script src="https://use.fontawesome.com/9822a089b7.js"></script>
+    <script src="https://use.fontawesome.com/6fec65462e.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/solid.css" integrity="sha384-wnAC7ln+XN0UKdcPvJvtqIH3jOjs9pnKnq9qX68ImXvOGz2JuFoEiCjT8jyZQX2z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/regular.css" integrity="sha384-zkhEzh7td0PG30vxQk1D9liRKeizzot4eqkJ8gB3/I+mZ1rjgQk+BSt2F6rT2c+I" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/brands.css" integrity="sha384-nT8r1Kzllf71iZl81CdFzObMsaLOhqBU1JD2+XoAALbdtWaXDOlWOZTR4v1ktjPE" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css" integrity="sha384-HbmWTHay9psM8qyzEKPc8odH4DsOuzdejtnr+OFtDmOcIVnhgReQ4GZBH7uwcjf6" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="jquery/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/regular.js" integrity="sha384-YdSTwqfKxyP06Jj3UzTeumv8M+Pme60+KND4oF+5r5VeUCvdkw7NhSzFYWbe00ba" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/brands.js" integrity="sha384-4BRtleJgTYsMKIVuV1Z7lNE29r4MxwKR7u88TWG2GaXsmSljIykt/YDbmKndKGID" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/fontawesome.js" integrity="sha384-QcnrgQuRmocjIBY6ByWMmDvUg3HO4MSdVjY7ynJwZfvTDhVPPQOUI9TRzc6/7ZO1" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<nav id="topnav">
+<div class="nav-wrapper">
+    <a href="#" class="brand-logo"><i class="large material-icons">euro_symbol</i>D.Convertor</a>
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="http://www.hubworkair.com"><i class="material-icons left">search</i>Who are we</a></li>
+        <li><a href="https://www.oanda.com/currency/live-exchange-rates/EURUSD/"><i class="material-icons left">trending_up</i>Live exchange rates</a></li>
+        <li><a href="https://www.fnlondon.com/"><i class="material-icons left">radio</i>Financials news</a></li>
+    </ul>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="http://www.hubworkair.com"><i class="material-icons left">search</i>Who are we</a></li>
+        <li><a href="https://www.oanda.com/currency/live-exchange-rates/EURUSD/"><i class="material-icons left">trending_up</i>Live exchange rates</a></li>
+        <li><a href="https://www.fnlondon.com/"><i class="material-icons left">radio</i>Financials news</a></li>
+    </ul>
+</div>
+</nav>
+    <main>
+        <div id="title">
+            <h3>Welcome to D. Convertor</h3>
+        </div>
+        <div id="rules">
+            <p>D. Convertor is a currency converter really easy to use.</p>
+            <ol>
+                <li>Choose the amount.</li>
+                <li>Choose the currency.</li>
+                <li>Choose in which currency do you want to do the conversation.</li>
+                <li>And press GO !!!</li>
+            </ol>
+        </div>
+        <br>
+        <div class="row center-align" id="activity">
+            <form class="col s12 offset-s4" id="convertion">
+                <div class="row">
+                    <div class="input-field col s4">
+                        <i class="material-icons prefix">attach_money</i>
+                        <input id="amount" type="text" class="validate">
+                        <label for="amount">Amount</label>
+                        <select class="browser-default" id="firstcurrency">
+                            <option value="" disabled selected>Currency n°1</option>
+                        </select>
+                        <h3><i class="medium material-icons">arrow_downward</i></h3>
+                        <select class="browser-default" id="secondcurrency">
+                            <option value="" disabled selected>Currency n°2</option>
+                        </select>
+                        <br>
+                        <button id="clic" class="btn-floating btn-large pulse" type="submit" value="send amount" name="action">GO</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div>
+            <p>Result of the conversion
+            <h3 class="center-align" id="result"></h3>
+            </p>
+        </div>
+    </main>
+    <div id="footer">
+        <div class="footer-copyright">
+            <div class="container center">
+                <h5>Follow us on</h5>
+                <div class="row">
+                    <div class="col s6 offset-s3">
+                        <p>
+                            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin fa-3x"></i></a>
+                            <a href="https://www.facebook.com/"><i class="fab fa-facebook-square fa-3x"></i></a>
+                            <a href="https://twitter.com/"><i class="fab fa-twitter fa-3x"></i></a>
+                            <a href="https://vimeo.com/"><i class="fab fa-vimeo fa-3x"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fab fa-instagram fa-3x"></i></a>
+                            <a href="https://www.pinterest.com/"><i class="fab fa-pinterest fa-3x"></i></a>
+                         </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+
