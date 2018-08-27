@@ -32,11 +32,11 @@
 <nav id="topnav">
 <div class="nav-wrapper">
     <a href="#" class="brand-logo"><i class="large material-icons">euro_symbol</i>D.Convertor</a>
-    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><span class="black-text"><i class="material-icons">menu</i></span></a>
     <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="http://www.hubworkair.com"><i class="material-icons left">search</i>Who are we</a></li>
-        <li><a href="https://www.oanda.com/currency/live-exchange-rates/EURUSD/"><i class="material-icons left">trending_up</i>Live exchange rates</a></li>
-        <li><a href="https://www.fnlondon.com/"><i class="material-icons left">radio</i>Financials news</a></li>
+        <li><a href="http://www.hubworkair.com"><span class="black-text"><i class="material-icons left">search</i>Who are we</span></a></li>
+        <li><a href="https://www.oanda.com/currency/live-exchange-rates/EURUSD/"><span class="black-text"><i class="material-icons left">trending_up</i>Live exchange rates</span></a></li>
+        <li><a href="https://www.fnlondon.com/"><span class="black-text"><i class="material-icons left">radio</i>Financials news</span></a></li>
     </ul>
     <ul class="sidenav" id="mobile-demo">
         <li><a href="http://www.hubworkair.com"><i class="material-icons left">search</i>Who are we</a></li>
@@ -60,12 +60,12 @@
         </div>
         <br>
         <div class="row center-align" id="activity">
-            <form class="col s12 offset-s4" id="convertion">
+            <form class="col s12" id="convertion">
                 <div class="row">
-                    <div class="input-field col s4">
+                    <div class="input-field col l4 offset-l4">
                         <i class="material-icons prefix">attach_money</i>
                         <input id="amount" type="text" class="validate">
-                        <label for="amount">Amount</label>
+                        <label for="amount"><span class="black-text">Amount</span></label>
                         <select class="browser-default" id="firstcurrency">
                             <option value="" disabled selected>Currency n°1</option>
                         </select>
@@ -74,7 +74,7 @@
                             <option value="" disabled selected>Currency n°2</option>
                         </select>
                         <br>
-                        <button id="clic" class="btn-floating btn-large pulse" type="submit" value="send amount" name="action">GO</button>
+                        <button id="clic" class="btn-floating btn-large pulse" type="submit" value="send amount" name="action"><span class="black-text">GO</span></button>
                     </div>
                 </div>
             </form>

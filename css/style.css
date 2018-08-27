@@ -17,17 +17,18 @@ body {
 /*--------------------------------------------------------header------------------------------------------------------*/
 #topnav {
     height: 8vh;
-    background-color: #2e7d32;
+    background-color: #fff8e1;
 }
 
 a.brand-logo {
     font-size: 20px;
+    color: black;
 }
 
 /*---------------------------------------------------------main-------------------------------------------------------*/
 main {
     flex: 1 0 auto;
-    background-color: #e0e0e0;
+    background-color: #43a047;
     text-align: center;
 }
 
@@ -56,6 +57,10 @@ li {
 
     background-color: #2e7d32;
     font-family: "Roboto", sans-serif;
+    border: black;
+    border-style: solid;
+    ;
+
 }
 
 /*--------------------------------------------------------footer------------------------------------------------------*/
